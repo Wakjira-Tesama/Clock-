@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(45, 42, 42);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  position: relative;
+}
+.cloc {
+  width: 300px;
+  height: 300px;
+  background-color: #eeeeea;
+  border-radius: 50%;
+  border: 2px solid rgb(217, 179, 24);
+  box-shadow: inset rgb(213, 196, 5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cloc span {
+  position: absolute;
+  transform: rotate(calc(30deg * var(--i)));
+  inset: 12px;
+  text-align: center;
+}
+.cloc span b {
+  color: rgb(20, 12, 6);
+  transform: rotate(calc(-30deg * var(--i)));
+  display: inline-block;
+  font-size: 20px;
+}
+.cloc::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: black;
+  border-radius: 50%;
+}
+.h {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.h i {
+  position: absolute;
+  width: 4px;
+  height: 70px;
+  background-color: var(--clr);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
